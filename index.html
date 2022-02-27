@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>mediCare</title>
+
+  <!-- fontawesome and bootstrap -->
+  <script src="https://kit.fontawesome.com/17a3dde786.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- My stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <section id="title">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+      <a class="navbar-brand" href="#title"><i class="fa-solid fa-house-chimney-medical"></i> mediCare</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#hospitals">Hospitals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dispensaries">Dispensaries</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#clinics">Clinics</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#vaccine">Vaccine</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <!-- title section -->
+    <div class="container-fluid">
+
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h1>10+ Hospitals in nearby Areas.</h1>
+          </div>
+          <div class="carousel-item">
+            <h1>24x7 availability of medicines in nearby dispensaries.</h1>
+            <h5>(Including Ayurvedic dispensaries.)</h5>
+          </div>
+          <div class="carousel-item">
+            <h1>Verified Clinics to cater all your health and medical needs.</h1>
+          </div>
+          <div class="carousel-item">
+            <h1>Vaccination centres providing Covid-19 vaccine to all age groups.</h1>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+<!-- modal form -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Appointment Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputName" class="form-label">Name</label>
+            <input type="email" class="form-control" id="exampleInputName">
+          </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputNumber" class="form-label">Phone No</label>
+        <input type="tel" class="form-control" id="exampleInputNumber">
+      </div>
+      <div class="mb-3">
+        <label for="floatingTextarea2">Issues/Queries</label>
+        <textarea class="form-control" placeholder="Leave your queries here" id="floatingTextarea2" style="height: 100px"></textarea>
+
+      </div>
+      <div class="mb-3">
+        <label for="date" class="form-label">Appointment Date</label>
+        <input type="date" class="form-control" id="date">
+      </div>
+    </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Hospitals section -->
+  <section id="hospitals">
+    <h1 class="heading">Hospitals</h1>
+    <div class="acc-item">
+      <button class="accordion">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/iitm_medicalunit.jpg" alt="">
+          </div>
+          <div class="col-lg-9">
+            <h2>IIT Mandi Medical Unit</h2>
+          </div>
+        </div>
+      </button>
+      <div class="panel">
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact No:</td>
+              <td>01905267238</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="http://students.iitmandi.ac.in/MedicalUnit/" target="_blank">http://students.iitmandi.ac.in/MedicalUnit/</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>QXFP+777, Kamand Campus, Suran, Himachal Pradesh 175005</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <!-- Button trigger modal -->
+        <div class="modal-div">
+          <button type="button" class="btn btn-success modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Appointment
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <button class="accordion">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/mandav.jfif" alt="">
+          </div>
+          <div class="col-lg-9">
+            <h2>Mandav Hospital</h2>
+          </div>
+        </div>
+      </button>
+      <div class="panel">
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact No:</td>
+              <td>01905-221922, 01905-221923</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="https://www.justdial.com/Mandi/Mandav-Hospital-Mandi-Ho/9999P1907-1907-110420131904-Z7P8_BZDET" target="_blank">https://www.justdial.com/Mandi/Mandav-Hospital-Mandi-Ho/9999P1907-1907-110420131904-Z7P8_BZDET</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-circle-check"></i>Speciality</td>
+              <td>
+                <ul>
+                  <li>Medical Specialist</li>
+                  <li>Surgeon</li>
+                  <li>Gynaecologist</li>
+                  <li>Pediatrician</li>
+                  <li>Orthopaedics</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>M.G.Road,Jail Road, Mandi, Himachal Pradesh 175001</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <!-- Button trigger modal -->
+        <div class="modal-div">
+          <button type="button" class="btn btn-success modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Appointment
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <button class="accordion">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/Neelkanth.PNG" alt="">
+          </div>
+          <div class="col-lg-9">
+            <h2>Neelkanth Hospital</h2>
+          </div>
+        </div>
+      </button>
+      <div class="panel">
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact No:</td>
+              <td>01905-224080</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="http://hospitalneelkanth.com/" target="_blank">http://hospitalneelkanth.com/</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-circle-check"></i>Speciality</td>
+              <td>
+                <ul>
+                  <li>Medical Specialist</li>
+                  <li>Skin Specialist</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>93/1, Palace Colony Rd, Palace Colony, Mandi, Himachal Pradesh 175001</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <!-- Button trigger modal -->
+        <div class="modal-div">
+          <button type="button" class="btn btn-success modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Appointment
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <button class="accordion">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/ayurvedic.jpg" alt="">
+          </div>
+          <div class="col-lg-9">
+            <h2>District Ayurvedic Hospital</h2>
+          </div>
+        </div>
+      </button>
+      <div class="panel">
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact No:</td>
+              <td>01905-226278</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="http://www.nhp.gov.in/hospital/district-ayurvedic-hospital-mandi-himachal_pradesh" target="_blank">http://www.nhp.gov.in/hospital/district-ayurvedic-hospital-mandi-himachal_pradesh</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>PW6H+W7F, Palace Colony, Mandi, Himachal Pradesh 175001</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <!-- Button trigger modal -->
+        <div class="modal-div">
+          <button type="button" class="btn btn-success modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <button class="accordion">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/harihar.jpeg" alt="">
+          </div>
+          <div class="col-lg-9">
+            <h2>Sri Harihar Hospital</h2>
+          </div>
+        </div>
+      </button>
+      <div class="panel">
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact No:</td>
+              <td>01905-246600</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="http://www.hariharhospital.com/" target="_blank">http://www.hariharhospital.com/</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-circle-check"></i>Speciality</td>
+              <td>
+                <ul>
+                  <li>Medical Specialist</li>
+                  <li>Surgeon</li>
+                  <li>Gynaecologist</li>
+                  <li>ENT Specialist</li>
+                  <li>Orthopaedics</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>National Highway 70, Batehar, Tarna, Mandi, Himachal Pradesh 175001</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <!-- Button trigger modal -->
+        <div class="modal-div">
+          <button type="button" class="btn btn-success modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Appointment
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <button class="accordion">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/jagriti.jfif" alt="">
+          </div>
+          <div class="col-lg-9">
+            <h2>Jagriti Medical Centre</h2>
+          </div>
+        </div>
+      </button>
+      <div class="panel">
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact No:</td>
+              <td>01905-237037</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-circle-check"></i>Speciality</td>
+              <td>
+              <ul>
+                <li>Medical Specialist
+                /cardiac facility available</li>
+                <li>Gynaecologist</li>
+              </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>QXFP+777, Kamand Campus, Suran, Himachal Pradesh 175005</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <!-- Button trigger modal -->
+        <div class="modal-div">
+          <button type="button" class="btn btn-success modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <button class="accordion">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/sanjeevan.jfif" alt="">
+          </div>
+          <div class="col-lg-9">
+            <h2>Sanjeevan Hospital</h2>
+          </div>
+        </div>
+      </button>
+      <div class="panel">
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact No:</td>
+              <td>01905-223114</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="http://www.nhp.gov.in/hospital/sanjeevan-hospital-mandi-himachal_pradesh" target="_blank">http://www.nhp.gov.in/hospital/sanjeevan-hospital-mandi-himachal_pradesh</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-circle-check"></i>Speciality</td>
+              <td>
+                <ul>
+                  <li>Medical Specialist</li>
+                  <li>Surgeon</li>
+                  <li>Pediatrician</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>Samkhetar Road, Moti Bazar, Samkhetar, Mandi, Himachal Pradesh 175001</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <!-- Button trigger modal -->
+        <div class="modal-div">
+          <button type="button" class="btn btn-success modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Appointment
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <button class="accordion">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/KShospital.jfif" alt="">
+          </div>
+          <div class="col-lg-9">
+            <h2>K.S. Hospital</h2>
+          </div>
+        </div>
+      </button>
+      <div class="panel">
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact No:</td>
+              <td>01905-226331</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="https://www.kshospitalmandi.in/" target="_blank">https://www.kshospitalmandi.in/</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-circle-check"></i>Speciality</td>
+              <td>
+                <ul>
+                  <li>ENT Specialist</li>
+                  <li>Orthopaedics</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>245, 5/5, Hospital Rd, opposite Zonal hospital, Palace Colony, Mandi, Himachal Pradesh 175001</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <!-- Button trigger modal -->
+        <div class="modal-div">
+          <button type="button" class="btn btn-success modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Appointment
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <button class="accordion">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/zonal.jpg" alt="">
+          </div>
+          <div class="col-lg-9">
+            <h2>Zonal Hospital (Govt.)</h2>
+          </div>
+        </div>
+      </button>
+      <div class="panel">
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact No:</td>
+              <td>01905-222177</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="https://hpmandi.nic.in/public-utility/public-utility-name-like-abc-bank-xyz-hospital-etc-2/" target="_blank">https://hpmandi.nic.in/public-utility/public-utility-name-like-abc-bank-xyz-hospital-etc-2/</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-circle-check"></i>Speciality</td>
+              <td>
+                <ul>
+                  <li>All Specialist</li>
+                  <li>Dentist</li>
+                  <li>Psychiatrist</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>Hospital Rd, Palace Colony, Mandi, Himachal Pradesh 175001</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <!-- Button trigger modal -->
+        <div class="modal-div">
+          <button type="button" class="btn btn-success modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Appointment
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <button class="accordion">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/bangaeye.jpg" alt="">
+          </div>
+          <div class="col-lg-9">
+            <h2>Banga Eyes Hospital</h2>
+          </div>
+        </div>
+      </button>
+      <div class="panel">
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact No:</td>
+              <td>01905-246974</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="https://www.justdial.com/Mandi/Banga-Eye-Hospital/9999P1905-1905-181207232304-H2I6_BZDET" target="_blank">https://www.justdial.com/Mandi/Banga-Eye-Hospital/9999P1905-1905-181207232304-H2I6_BZDET</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-circle-check"></i>Speciality</td>
+              <td>
+                <ul>
+                  <li>Eyes Specialist</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>Ota, Himachal Pradesh 175001</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <!-- Button trigger modal -->
+        <div class="modal-div">
+          <button type="button" class="btn btn-success modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Appointment
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Dispensaries section -->
+  <section id="dispensaries">
+    <h1 class="heading">Dispensaries</h1>
+    <div class="row row-cols-1 row-cols-lg-4 g-4">
+    <div class="col">
+    <div class="card">
+      <img src="images/barotiwala.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">BAROTIWALA</h5>
+        <p class="card-text">Med. Officer Incharge,<br>
+          ESI Dispensary,<br>
+          Vill. Buranwala, P.O. Barotiwala, Tehsil Kasauli,<br>
+          SOLAN DISTT.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/baddi.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">BADDI</h5>
+        <p class="card-text">Med. Officer Incharge,<br>
+          ESI Dispensary, Near State Bank of Patiala,<br>
+          Tehsil: Nalagarh,<br>
+          SOLAN DISTT.</p>
+                </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/chambaghat.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CHAMBAGHAT</h5>
+        <p class="card-text">Med. Officer Incharge,<br>
+ESI Dispensary,<br>
+CHAMBAGHAT, SOLAN DISTT.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/kala-amb.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">KALA AMB</h5>
+        <p class="card-text">Med. Officer Incharge,<br>
+ESI Dispensary,<br>
+KALA AMB</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/mehatpur.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MEHATPUR</h5>
+        <p class="card-text">Med. Officer Incharge,<br>
+ESI Dispensary,<br>
+MEHATPUR</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/paonta-sahib.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PAONTA SAHIB</h5>
+        <p class="card-text">Med. Officer Incharge,<br>
+ESI Dispensary,<br>
+PAONTA SAHIB</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/paonta-2.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PAONTA SAHIB-2</h5>
+        <p class="card-text">Med. Officer Incharge,<br>
+ESI Dispensary,Malwa Cotton Mills,<br>
+PAONTA SAHIB</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/ddu-shimla.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">SHIMLA</h5>
+        <p class="card-text">Med. Officer Incharge,<br>
+ESI Dispensary, Deen Dayal Upadhyay Hospital,<br>
+SHIMLA</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </section>
+
+  <!-- Hospitals section -->
+  <section id="clinics">
+    <h1 class="heading">Clinics</h1>
+
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="images/aradhya-clinic.jfif" alt="">
+      </div>
+      <div class="col-lg-9">
+        <h2>Dr Aradhya's Diet Clinic</h2>
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact:</td>
+              <td>+91 9736070412</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="https://www.justdial.com/Mandi/Dr-Aradhyas-Diet-Clinic-Near-Hema-Homeo-Clinic-Mandi-HP/9999P1905-1905-191102113019-M7L8_BZDET?xid=TWFuZGkgQ2xpbmljcyBNYW5kaSBIUA==" target="_blank">https://www.justdial.com/Mandi/Dr-Aradhyas-Diet-Clinic</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>Nh 21, Naresh Chowk, Sunderngar, Mandi HP, Mandi - 175027, Near Hema Homeo Clinic</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="images/treatment-plaza.jfif" alt="">
+      </div>
+      <div class="col-lg-9">
+        <h2>Treatment Plaza Family Health Clinic</h2>
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact:</td>
+              <td>+91 9418080607</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="https://www.justdial.com/Mandi/Treatment-Plaza-Family-Health-Clinic-Sunder-Ngr-Mandi-HP/9999PX177-X177-111229113039-L9G4_BZDET?xid=TWFuZGkgQ2xpbmljcyBNYW5kaSBIUA==" target="_blank">https://www.justdial.com/Mandi/Treatment-Plaza-Family-Health-Clinic</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>Mandi HP, Mandi - 175027, Sunder Ngr</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="images/dhanvantri.jfif" alt="">
+      </div>
+      <div class="col-lg-9">
+        <h2>Shree Dhanvantri Ayurveda Centre</h2>
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact:</td>
+              <td>+91 9816796904</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="https://www.justdial.com/Mandi/Shree-Dhanvantri-Ayurveda-Centre-Opposite-Hari-Har-Hospital-Mandi-HP/9999P1905-1905-200904104911-I1R2_BZDET?xid=TWFuZGkgQ2xpbmljcyBNYW5kaSBIUA==" target="_blank">https://www.justdial.com/Mandi/Shree-Dhanvantri-Ayurveda-Centre</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>Ayurveda Centre, Gutkar, Mandi HP, Mandi - 175027, Opposite Hari Har Hospital</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="images/rc-rathore.jfif" alt="">
+      </div>
+      <div class="col-lg-9">
+        <h2>Dr. Rc Rathore Oral Helth Dental Clinic</h2>
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact:</td>
+              <td>+91 9459043173</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="https://www.justdial.com/Mandi/Dr-Rc-Rathore-Oral-Helth-Dental-Clinic/9999P1905-1905-190819050641-L5X6_BZDET?xid=TWFuZGkgQ2xpbmljcyBNYW5kaSBIUA==" target="_blank">https://www.justdial.com/Mandi/Dr-Rc-Rathore-Oral-Helth-Dental-Clinic</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>Oposite Sdm Office, Dadour, Mandi - 175027</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="images/belleza.png" alt="">
+      </div>
+      <div class="col-lg-9">
+        <h2>Belleza-House of miracles by Shindsky</h2>
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i>Contact:</td>
+              <td>+91 9988230115</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-globe"></i>Website:</td>
+              <td><a href="https://www.justdial.com/Mandi/Belleza-House-Of-Miracles-By-Shindsky-Near-Rest-House-Sunder-Nagar-1/9999P1905-1905-201212135750-V6W3_BZDET?xid=TWFuZGkgQ2xpbmljcyBNYW5kaSBIUA==" target="_blank">https://www.justdial.com/Mandi/Belleza-House-Of-Miracles-By-Shindsky</a></td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i>Address:</td>
+              <td>Shop No. 151/4, Hanuman Mandir, Sunder Nagar 1, Mandi - 175018, Near Rest House</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="vaccine">
+
+    <h1>Vaccination</h1>
+    <h4>Head over to the Co-Win website dashboard for detailed information on
+    vaccination availability in nearby areas.</h4>
+    <div class="vaccination-buttons">
+      <a type="button" class="btn btn-outline-light btn-lg" href="https://www.cowin.gov.in/" target="_blank">Co-Win</a>
+      <a type="button" class="btn btn-outline-light btn-lg" href="#title">HOME</a>
+    </div>
+
+  </section>
+
+  <footer id="footer">
+    <i class="footer-icon fa-brands fa-twitter"></i>
+    <i class="footer-icon fa-brands fa-facebook-f"></i>
+    <i class="footer-icon fa-brands fa-instagram"></i>
+    <i class="footer-icon fa-solid fa-envelope"></i>
+    <p>© Copyright 2022 mediCare</p>
+
+  </footer>
+
+
+  <!-- javascript -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
